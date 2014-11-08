@@ -1,0 +1,41 @@
+h1, h2 {
+    color: #444;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+#host {
+    padding: 0px 15px;
+}
+
+#hostname {
+    font-size: 12px;
+    color: #999999;
+}
+
+#ports > li{
+    background-color:#77CCD7;
+    color:white;
+    float:left;
+    font-size:12px;
+    height:48px;
+    list-style-type:none;
+    margin:5px;
+    position:relative;
+    text-shadow:none;
+    width:48px;
+}
+
+#ports > li > a {
+    color: white;
+    position: absolute;
+    width: 48px;
+    text-align: center;
+    top: 30%;
+}
