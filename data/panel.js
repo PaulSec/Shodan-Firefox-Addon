@@ -2,6 +2,15 @@ window.onload = function() {
     document.getElementById("host").style.display = "none";
     document.getElementById("info").style.display = "none";
     document.getElementById("error").style.display = "none";
+    document.getElementById("direct-link").addEventListener("click", viewDetails);
+}
+
+function viewDetails() {
+    console.log('click');
+    ip = document.getElementById("ip").innerHTML;
+    self.port.emit("viewDetails", {
+        'ip': ip
+    });
 }
 
 self.port.on("ShodanResponse", function(shodanResponsePayload) {
