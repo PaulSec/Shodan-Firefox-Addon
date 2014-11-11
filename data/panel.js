@@ -51,3 +51,10 @@ self.port.on("Info", function(infoMessagePayload) {
     document.getElementById("info").style.display = "block";
     document.getElementById("error").style.display = "none";
 });
+
+self.port.on("resize", function({width, height}) {
+    console.log('test');
+    console.log(width);
+    console.log(height);
+    self.resize(width, height);
+});
