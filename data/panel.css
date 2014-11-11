@@ -7,7 +7,7 @@ h2 {
 }
 
 #host {
-    padding: 0px 15px 45px 10px;
+    padding: 0px 15px 15px 10px;
 }
 
 #hostname {
@@ -31,6 +31,8 @@ h2 {
 }
 
 #ports {
+    padding-left: 0px;
+    overflow: auto;
     /* Use paddings instead of margins to avoid margin collapsing */
     margin-bottom: 0px;
     padding-bottom: 10px;
@@ -40,7 +42,7 @@ h2 {
     margin: 0px;
 }
 
-#ports > li{
+#ports > li {
     background-color:#77CCD7;
     color:white;
     float:left;
@@ -62,7 +64,18 @@ h2 {
     top: 30%;
 }
 
+#footer {
+    border-top: 1px solid #DDD;
+    padding-top: 6px;
+    display: block;
+    width: 100%;
+}
+
 #direct-link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     /* Use paddings instead of margins to avoid margin collapsing */
     margin-bottom: 0px;
     padding-bottom: 10px;
