@@ -39,8 +39,8 @@ self.port.on("ShodanResponse", function(shodanResponsePayload) {
     document.getElementById("info").style.display = "none";
     document.getElementById("error").style.display = "none";
     self.port.emit("resize", {
-        width: document.body.clientWidth,
-        height: document.body.clientHeight
+        width: document.body.scrollWidth,
+        height: document.body.scrollHeight
     });
 });
 
@@ -53,8 +53,8 @@ self.port.on("Error", function(errorMessagePayload) {
     document.getElementById("info").style.display = "none";
     document.getElementById("error").style.display = "block";
     self.port.emit("resize", {
-        width: document.body.clientWidth,
-        height: document.body.clientHeight
+        width: document.body.scrollWidth,
+        height: document.body.scrollHeight
     });
 });
 
@@ -67,7 +67,7 @@ self.port.on("Info", function(infoMessagePayload) {
     document.getElementById("info").style.display = "block";
     document.getElementById("error").style.display = "none";
     self.port.emit("resize", {
-        width: document.body.clientWidth,
-        height: document.body.clientHeight
+        width: document.body.scrollWidth,
+        height: document.body.scrollHeight
     });
 });
