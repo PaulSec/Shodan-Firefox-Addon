@@ -5,6 +5,9 @@
   "description": "Coming soon...",
   "main": "index.js",
   "author": "",
+  "permissions": {
+    "private-browsing": true
+  },
   "engines": {
     "firefox": ">=38.0a1",
     "fennec": ">=38.0a1"
