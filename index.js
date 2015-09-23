@@ -25,7 +25,7 @@ var panel = panels.Panel({
 });
 
 function queryDnsInformation(url) {
-    var hostMatches = url.match(/https?:\/\/(?:www\.)?(.[^/]+).*/);
+    var hostMatches = url.match(/https?:\/\/([^/:]+).*/);
     if (hostMatches == null) {
         panel.port.emit("Info", "No host information for: \"" + url + "\"");
         return;
