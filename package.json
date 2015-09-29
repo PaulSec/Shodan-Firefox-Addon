@@ -1,7 +1,7 @@
 {
   "title": "Shodan Firefox Addon",
   "name": "shodan-firefox-addon",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Coming soon...",
   "main": "index.js",
   "author": "",
