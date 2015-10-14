@@ -35,48 +35,46 @@ self.port.on("ShodanResponse", function(shodanResponsePayload) {
     document.getElementById("general-info").innerHTML = tableInfo;
 
     var portsInfo = "";
-    var portsNumber = hostInfo["ports"].length;
-    for (var i = 0; i <  portsNumber; i++) {
-        portsInfo += "<li><a href=\"#" + hostInfo["ports"][i] + "\">" + hostInfo["ports"][i] + "</a></li>";
+    var portsSorted = hostInfo["ports"].sort();
+    var portsLength = portsSorted.length;
+    for (var i = 0; i <  portsLength; i++) {
+        portsInfo += "<li><a href=\"#" + portsSorted[i] + "\">" + portsSorted[i] + "</a></li>";
     }
 
     document.getElementById("ports").innerHTML = portsInfo;
-
-    // TODO Put the following code into a function as we have similar code in
-    //      other "self.port.on()".
-    document.getElementById("host").style.display = "block";
-    document.getElementById("info").style.display = "none";
-    document.getElementById("error").style.display = "none";
-    self.port.emit("resize", {
-        width: document.body.scrollWidth,
-        height: document.body.scrollHeight
-    });
+    displayStyle(0);
 });
 
 self.port.on("Error", function(errorMessagePayload) {
     document.getElementById("error-content").innerHTML = "<p>Error: " + errorMessagePayload + "</p>";
-
-    // TODO Put the following code into a function as we have similar code in
-    //      other "self.port.on()".
-    document.getElementById("host").style.display = "none";
-    document.getElementById("info").style.display = "none";
-    document.getElementById("error").style.display = "block";
-    self.port.emit("resize", {
-        width: document.body.scrollWidth,
-        height: document.body.scrollHeight
-    });
+    displayStyle(1);
 });
 
 self.port.on("Info", function(infoMessagePayload) {
     document.getElementById("info-content").innerHTML = "<p>" + infoMessagePayload + "</p>";
+    displayStyle(2);
+});
 
-    // TODO Put the following code into a function as we have similar code in
-    //      other "self.port.on()".
-    document.getElementById("host").style.display = "none";
-    document.getElementById("info").style.display = "block";
-    document.getElementById("error").style.display = "none";
+function displayStyle(content) {
+    switch (content) {
+        case 0:
+            document.getElementById("host").style.display = "block";
+            document.getElementById("info").style.display = "none";
+            document.getElementById("error").style.display = "none";
+            break;
+        case 1:
+            document.getElementById("host").style.display = "none";
+            document.getElementById("info").style.display = "none";
+            document.getElementById("error").style.display = "block";
+            break;
+        case 2:
+            document.getElementById("host").style.display = "none";
+            document.getElementById("info").style.display = "block";
+            document.getElementById("error").style.display = "none";
+            break;
+	}
     self.port.emit("resize", {
         width: document.body.scrollWidth,
         height: document.body.scrollHeight
     });
-});
+}

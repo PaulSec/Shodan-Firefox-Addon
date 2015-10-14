@@ -2,7 +2,7 @@
   "title": "Shodan Firefox Addon",
   "name": "shodan-firefox-addon",
   "version": "0.3",
-  "description": "Coming soon...",
+  "description": "This add-on retrieves data gathered by Shodan.io of the current website you're browsing. It displays you general information such as the Organisation but also open ports.",
   "main": "index.js",
   "author": "",
   "permissions": {
