@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/popup.css">
+    <script src="/js/popup.js"></script>
+    <link rel="stylesheet" href="https://static.shodan.io/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://static.shodan.io/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<div class='host'>
+		<h1><i class='icon-globe'></i><span id='ip'></span></h1>
+		<div class='hostnames' id='hostnames'>
+		</div>
+		<table class="table">
+		    <tbody id='items'>
+		    </tbody>
+		  </table>
+
+		<h2><i class='icon-th-large'></i>Ports</h2>
+		<ul class='ports' id='ports'>
+		</ul>
+		<div style='clear:both'></div>
+
+		<div id='vulns'></div>
+		<div style='clear:both'></div>
+
+		<div style='text-align:center;padding:5px 0 10px;border-top:1px solid #eee;'>
+			<a class='btn' id='host-link' target='_blank'>View Host Details</a>
+		</div>
+	</div>
+</body>
+</html>

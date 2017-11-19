@@ -1,0 +1,30 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"name": "Shodan",
+	"version": "0.3.0",
+	"manifest_version": 2,
+	"description": "The Shodan plugin tells you where the website is hosted (country, city), who owns the IP and what other services/ ports are open.",
+	"icons": {
+		"16": "img/16x16.png",
+		"48": "img/48x48.png",
+		"128": "img/128x128.png"
+	},
+	"background": {
+		"scripts": ["js/background.js"]
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "img/19x19.png",
+			"38": "img/38x38.png"
+		},
+		"default_title": "Shodan - click for details",
+		"default_popup": "html/popup.html"
+	},
+	"permissions": [
+		"tabs",
+		"contextMenus",
+		"https://api.shodan.io/",
+		"https://www.shodan.io/"
+	]
+}

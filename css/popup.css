@@ -1,0 +1,99 @@
+
+.host {
+  width: 300px;
+}
+
+.host h1,
+.host h2 {
+	color: #444;
+  	font-family: 'Myriad Pro', 'Helvetica';
+}
+
+.host > ul {
+  	list-style-type: none;
+  	margin-left: 0;
+}
+
+.host h1 {
+  	font-size: 18px;
+  	line-height: 18px;
+}
+
+.host h2 {
+  	font-size: 14px;
+  	line-height: 14px;
+}
+
+.host i {
+  	padding-right: 5px;
+}
+
+.host .hostnames a {
+	color: #999;
+}
+
+.host .ports li {
+  	background-color: #77CCD7;
+  	color: white;
+  	float: left;
+  	font-family: Arial;
+  	font-size: 12px;
+  	font-weight: bold;
+  	height: 48px;
+  	margin: 5px;
+  	position: relative;
+  	text-shadow: none;
+  	width: 48px;
+}
+
+.host .ports li > a {
+  background-color: #2d6987;
+  color: white;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+}
+
+.host .ports li > a:hover {
+  background-color: #404040;
+}
+
+.host .ports li span {
+  color: white;
+  height: 34px;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  width: 48px;
+}
+
+.host .ports li a > span:hover {
+  text-decoration: underline;
+}
+
+.host table td,
+.host table th {
+  line-height: 8px;
+}
+
+.host #vulns ul {
+	margin-top: 5px;
+}
+
+.host #vulns ul li {
+	list-style-type: none;
+	margin-left: -20px;
+}
+
+.host #vulns a {
+	color: black;
+	text-decoration: none;
+}
+
+.host #vulns a:hover {
+	text-decoration: underline;
+}
+
+.host #vulns img {
+	width: 28px;
+}
