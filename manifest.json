@@ -1,6 +1,4 @@
 {
-"update_url": "https://clients2.google.com/service/update2/crx",
-
 	"name": "Shodan",
 	"version": "0.3.0",
 	"manifest_version": 2,
