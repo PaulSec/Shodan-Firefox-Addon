@@ -3,7 +3,7 @@ Shodan Firefox Add-on
 
 First release of the Shodan Firefox Add-on is now out. 
 
-You can get it directly from [Mozilla](https://addons.mozilla.org/fr/firefox/addon/shodan-firefox-addon/) or on Github in the [release](https://github.com/PaulSec/Shodan-Firefox-Addon/releases) section. 
+You can get it directly from [Mozilla](https://addons.mozilla.org/fr/firefox/addon/shodan_io/) or on Github in the [release](https://github.com/PaulSec/Shodan-Firefox-Addon/releases) section. 
 
 Contributing
 ====
