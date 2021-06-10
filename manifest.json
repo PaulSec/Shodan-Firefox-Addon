@@ -1,6 +1,6 @@
 {
 	"name": "Shodan",
-	"version": "0.3.0",
+	"version": "0.3.3",
 	"manifest_version": 2,
 	"description": "The Shodan plugin tells you where the website is hosted (country, city), who owns the IP and what other services/ ports are open.",
 	"icons": {
