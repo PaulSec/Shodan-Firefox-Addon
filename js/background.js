@@ -13,7 +13,7 @@ function getHostname(url) {
 
 function dnsLookup(hostname, callback) {
 	var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://api.shodan.io/dns/resolve?key=MM72AkzHXdHpC8iP65VVEEVrJjp7zkgd&hostnames=' + hostname, true);
+    xhr.open('GET', 'https://api.shodan.io/dns/resolve?key=WagM7oXeNhWvQWjd9ePx2buFiHv2phhq&hostnames=' + hostname, true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4) {
         	try {
@@ -33,7 +33,7 @@ function dnsLookup(hostname, callback) {
 
 function hostLookup(ip, callback) {
 	var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://api.shodan.io/shodan/host/' + ip + '?key=MM72AkzHXdHpC8iP65VVEEVrJjp7zkgd&minify=true', true);
+    xhr.open('GET', 'https://api.shodan.io/shodan/host/' + ip + '?key=WagM7oXeNhWvQWjd9ePx2buFiHv2phhq&minify=true', true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4) {
         	try {
